@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Validation-Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form onsubmit="return validateForm()">
+      <h1>SignUp</h1>
+      <span>
+        <label for="name">Name :</label>
+        <input
+          id="name"
+          type="text"
+          placeholder="enter your valid name"
+        /><br />
+        <label for="email">Email :</label>
+        <input id="email" type="email" placeholder=" xyz@gmail.com" /><br />
+        <label class="hack" for="password">Password :</label>
+        <input
+          id="password"
+          type="passwd"
+          placeholder="min -8 character required"
+        /><br />
+
+        <button type="Submit">Submit</button>
+      </span>
+      <footer class="footer">Information is neccessaary.</footer>
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>
